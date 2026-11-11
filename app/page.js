@@ -18,7 +18,9 @@ export default function Home() {
         </p>
         <div className="frases">
           {frases
-            ? frases.map((frase, i) => <div key={i}>{frase.texto}</div>)
+            ? frases.map((frase, i) => (
+                <div key={i}>{frase.texto + " (" + frase.n_votos + ")"}</div>
+              ))
             : "Cargando..."}
         </div>
         <ul>
