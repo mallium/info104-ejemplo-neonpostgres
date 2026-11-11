@@ -29,9 +29,9 @@ export default function Home() {
             </a>
           </li>
           <li>
-            Luego, en Neon, crea una base d e datos de ejemplo, una tabla con
-            algunos datos. En este ejemplo se creó la base de datos
-            "ejemplo-sql" con una tabla, la tabla "frases"{" "}
+            Luego, en Neon, crea una base de datos de ejemplo y una tabla. En
+            este ejemplo se creó la base de datos "ejemplo-sql" con una tabla,
+            la tabla "frases"{" "}
             <pre>
               <code>
                 CREATE TABLE "frases" (<br /> "id" integer PRIMARY KEY GENERATED
@@ -47,15 +47,19 @@ export default function Home() {
             </pre>
           </li>
           <li>
+            Pobla la base de datos con algunos datos usando la herramienta de
+            Neon.
+          </li>
+          <li>
             Neon te da el string de conexión a tu base de datos: botón
             "connect", ver .env
             <br />
             El string de conexión se copia en un archivo .env.local en la raiz
-            de tu proyeccto NextJS
+            de tu proyecto NextJS
           </li>
           <li>
             Revisa el archivo ./api/frases/route.js para ver como se define el
-            servicio que hace aquery a la base de datos
+            servicio que hace la query a la base de datos
           </li>
           <li>
             Revisa el archivo ./page.js para ver como se consume el servicio
