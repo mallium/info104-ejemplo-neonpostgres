@@ -16,13 +16,15 @@ Luego debes crear una base de datos postgres en Neon y copiar el string de conex
 Primero, crea una cuenta en neon [(https://neon.com/)](https://neon.com/)
 
 Luego, en Neon, crea una base de datos de ejemplo y una tabla. En este ejemplo se creó la base de datos "ejemplo-sql" con una tabla, la tabla "frases"
-`CREATE TABLE "frases" (
+
+```sql
+CREATE TABLE "frases" (
      "id" integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY (sequence name "frases_id_seq" INCREMEN BY 1 MINVALUE 1 MAXVALUE 2147483647 START WITH 1 CACHE 1),
      "texto" text,
      "fecha" timestamp
 );
 CREATE UNIQUE INDEX "frases_pkey" ON "frases" ("id");
-`
+```
 
 Pobla la base de datos con algunos datos usando la herramienta de Neon.
 
